@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../style/main.module.less'
 
 const Map = ({ selections }) => {
     return (
