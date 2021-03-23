@@ -1,4 +1,4 @@
 # react-visitors-by-state
 
-## Runnning locally
+## Running locally
   `yarn dev`
