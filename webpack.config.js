@@ -8,10 +8,10 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
   entry: "./src/index.js",
-  output: { // NEW
+  output: {
     path: path.join(__dirname, 'dist'),
     filename: "[name].js"
-  }, // NEW Ends
+  },
   plugins: [htmlPlugin],
   module: {
     rules: [
@@ -29,7 +29,7 @@ module.exports = {
       {
         test: /\.(less|css)$/,
         use: [{
-          loader: 'style-loader' // creates style nodes from JS strings
+          loader: 'style-loader'
         }, {
             loader: 'css-loader',
             options: {
@@ -37,11 +37,7 @@ module.exports = {
               modules: true,
             },
           }, {
-          loader: 'less-loader', // compiles Less to CSS
-        //   options: {
-        //     importLoaders: 1,
-        //     modules: true,
-        //   }
+          loader: 'less-loader',
         }]
       }
     ]
