@@ -11,7 +11,7 @@ const App = () => {
     return (
         <div>
             <div className={ styles.header }>
-                <Logo></Logo>
+                <Logo/>
             </div>
             <div className={ styles.main }>
                 <div>
